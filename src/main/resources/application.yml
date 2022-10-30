@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: email-service
+
+  config:
+    #    local:
+    #    import: configserver:http://localhost:9025
+    #    docker:
+    import: configserver:http://172.20.10.4:9025
+  cloud:
+    config:
+      fail-fast: true
